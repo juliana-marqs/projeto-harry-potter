@@ -1,0 +1,212 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Harry Potter';
+    src: url('../fontes/harry.TTF');
+    font-weight: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300;10..48,400;10..48,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --cor01: #EEDFB0;
+    --cor02: #CFAC39;
+    --cor03: #5F0A1B;
+    --cor04: #3F3F3F;
+    --cor05: #499a45;
+    --cor06: #036381;
+
+    --fonte-especial: 'Harry Potter', cursive;
+    --fonte-padrao: Arial, sans-serif;
+    --fonte-destaque: 'Bricolage Grotesque', sans-serif;
+}
+
+body{
+    background-color: var(--cor01);
+    font-family: var(--fonte-padrao);
+}
+
+a.externo::after{
+    content: '\00A0\1F517';
+}
+
+header{
+    background-image: url('../imagens/harrypotter.jpg');
+    color: white;
+    padding: 30px;
+    text-align: center;
+    min-height: 150px;
+    margin-bottom: -38px;
+}
+
+header > h1{
+    font-family: var(--fonte-especial);
+    font-size: 3.5em;
+    margin: 20px;
+    text-shadow: 2px 3px 6px rgba(0, 0, 0, 0.71);
+}
+
+header > p{
+    font-family: var(--fonte-padrao);
+    font-size: 1em;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-shadow: 2px 3px 6px rgba(0, 0, 0, 0.333);
+}
+
+nav {
+    padding: 10px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    transition-duration: .5s;
+}
+
+nav > a:hover{
+    background-color: var(--cor01);
+    color: var(--cor06);
+    border-radius: 5px;
+}
+
+main {
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 30px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.244);
+}
+
+main h1{
+    font-family: var(--fonte-destaque);
+    color: var(--cor04);
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+main h2{
+    color: var(--cor04);
+    font-size: 1.5em;
+    font-family: var(--fonte-destaque);
+    text-indent: 8px;
+}
+
+main p{
+    line-height: 20px;
+    margin: 15px 0px;
+    text-indent: 25px;
+    text-align: justify;
+}
+
+main a{
+    text-decoration: none;
+    background-color: var(--cor01);
+    color: var(--cor05);
+    padding: 0px 5px;
+}
+
+main strong{
+    font-weight: bold;
+}
+
+main .grifinoria{
+    background-image: linear-gradient(to right, var(--cor03), transparent);
+    color: white;
+}
+
+main .lufa-lufa{
+    background-image: linear-gradient(to right, var(--cor02), transparent);
+    color: white;
+}
+
+main .corvinal{
+    background-image: linear-gradient(to right, var(--cor06), transparent);
+    color: white;
+}
+
+main .sonserina{
+    background-image: linear-gradient(to right, var(--cor05), transparent);
+    color: white;
+}
+
+main img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.lista-com-imagem {
+    display: flex;
+}
+
+.lista-com-imagem img{
+    max-width: 130px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.lista-com-imagem ul{
+    list-style: none;
+    padding-left: 20px;
+}
+
+aside{
+    background-color: var(--cor01);
+    border-radius: 10px;
+}
+
+aside h3{
+    color: white;
+    background-color: var(--cor03);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+aside p {
+    padding: 0px 15px;
+}
+
+aside ul{
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+    padding: 15px;
+    line-height: 25px;
+    text-indent: 25px;
+}
+
+footer{
+    background-color: var(--cor03);
+    padding: 5px;
+    margin-top: 15px;
+    text-align: center;
+    color: white;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--cor02);
+    transition-duration: .2s;
+}
+
+footer a:hover{
+    background-color: var(--cor01);
+    color: var(--cor05);
+    border-radius: 5px;
+    padding: 3px;
+}
