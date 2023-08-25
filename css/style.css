@@ -151,8 +151,8 @@ main img{
     display: flex;
 }
 
-.lista-com-imagem img{
-    max-width: 130px;
+.lista-com-imagem > picture{
+    max-width: 150px;
     height: auto;
     vertical-align: middle;
     margin-right: 10px;
